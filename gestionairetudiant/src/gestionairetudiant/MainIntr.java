@@ -27,21 +27,102 @@ public class MainIntr extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        AjoutEtudiant = new javax.swing.JButton();
+        AjouterUnite = new javax.swing.JButton();
+        AjouterModul = new javax.swing.JButton();
+        SaisirNote = new javax.swing.JButton();
+        CalculMoy = new javax.swing.JButton();
+        CunsulList = new javax.swing.JButton();
+        EditProf = new javax.swing.JButton();
+        MainRet = new javax.swing.JButton();
+        Bg = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1273, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 549, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        AjoutEtudiant.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/MajoutEtud.png"))); // NOI18N
+        AjoutEtudiant.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AjoutEtudiantActionPerformed(evt);
+            }
+        });
+        getContentPane().add(AjoutEtudiant, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, 400, 100));
+
+        AjouterUnite.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/MajouUnBg.png"))); // NOI18N
+        AjouterUnite.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AjouterUniteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(AjouterUnite, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 240, 400, 100));
+
+        AjouterModul.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/MajoutMod.png"))); // NOI18N
+        AjouterModul.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AjouterModulActionPerformed(evt);
+            }
+        });
+        getContentPane().add(AjouterModul, new org.netbeans.lib.awtextra.AbsoluteConstraints(895, 240, 400, 100));
+
+        SaisirNote.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/MsisirNot.png"))); // NOI18N
+        SaisirNote.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SaisirNoteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(SaisirNote, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 520, 400, 100));
+
+        CalculMoy.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/MCalMoyn.png"))); // NOI18N
+        getContentPane().add(CalculMoy, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 520, 400, 100));
+
+        CunsulList.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/Mconsul.png"))); // NOI18N
+        getContentPane().add(CunsulList, new org.netbeans.lib.awtextra.AbsoluteConstraints(895, 518, 400, 100));
+
+        EditProf.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/MEditProf.png"))); // NOI18N
+        getContentPane().add(EditProf, new org.netbeans.lib.awtextra.AbsoluteConstraints(1038, 649, 160, 30));
+
+        MainRet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/MRetur.png"))); // NOI18N
+        MainRet.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MainRetActionPerformed(evt);
+            }
+        });
+        getContentPane().add(MainRet, new org.netbeans.lib.awtextra.AbsoluteConstraints(1202, 649, 90, 30));
+
+        Bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/MainIntrBg.png"))); // NOI18N
+        getContentPane().add(Bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 690));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void SaisirNoteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaisirNoteActionPerformed
+        dispose();
+        SaisirNote newNote = new  SaisirNote();
+        newNote.setVisible(true);
+    }//GEN-LAST:event_SaisirNoteActionPerformed
+
+    private void MainRetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainRetActionPerformed
+        dispose();
+        Login ln = new Login();
+        ln.setVisible(true);
+    }//GEN-LAST:event_MainRetActionPerformed
+
+    private void AjoutEtudiantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AjoutEtudiantActionPerformed
+        dispose();
+        AjouterEtud NewEtudIntr = new AjouterEtud();
+        NewEtudIntr.setVisible(true);
+        
+    }//GEN-LAST:event_AjoutEtudiantActionPerformed
+
+    private void AjouterUniteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AjouterUniteActionPerformed
+        dispose();
+        AjouterUnite NewUnite = new AjouterUnite();
+        NewUnite.setVisible(true);
+    }//GEN-LAST:event_AjouterUniteActionPerformed
+
+    private void AjouterModulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AjouterModulActionPerformed
+        
+    }//GEN-LAST:event_AjouterModulActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +160,14 @@ public class MainIntr extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton AjoutEtudiant;
+    private javax.swing.JButton AjouterModul;
+    private javax.swing.JButton AjouterUnite;
+    private javax.swing.JLabel Bg;
+    private javax.swing.JButton CalculMoy;
+    private javax.swing.JButton CunsulList;
+    private javax.swing.JButton EditProf;
+    private javax.swing.JButton MainRet;
+    private javax.swing.JButton SaisirNote;
     // End of variables declaration//GEN-END:variables
 }
